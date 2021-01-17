@@ -1,6 +1,6 @@
 var f = require("fs");
 
-var input_file = f.readFileSync("B.txt", "utf-8").split("\n");
+var input_file = f.readFileSync("input.txt", "utf-8").split("\n");
 
 var params = input_file[0].split(" ");
 
@@ -97,4 +97,4 @@ let result = output.sort(function(a, b) {
 		return [x[1], x[2], x[3]].join(" ");
 	}
 });
-f.writeFileSync("B_0.txt", result.join("\n"));
+f.writeFileSync("output.txt", result.join("\n"));
